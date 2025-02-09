@@ -1,0 +1,76 @@
+.moviecard {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+  
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  
+      .movie__banner {
+        transform: scale(1.2) rotate(5deg);
+        filter: brightness(0.6);
+      }
+  
+      .movie__overlay .movie__title {
+        color: #ffcc00; /* Highlight color */
+      }
+  
+      .movie__overlay .movie__overview {
+        opacity: 1;
+      }
+    }
+  
+    .movie__banner {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 300ms ease-in-out, filter 300ms ease-in-out;
+    }
+  
+    .movie__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      align-items: flex-start;
+      justify-content: flex-end;
+      color: white;
+      overflow: hidden;
+      transition: opacity 300ms ease-in-out;
+  
+      .movie__title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 8px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+  
+      .movie__overview {
+        font-size: 1rem;
+        opacity: 0.85;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Show up to 3 lines of overview */
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-align: left;
+        margin-block: 8px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        transition: opacity 300ms ease-in-out;
+      }
+    }
+  }
+  

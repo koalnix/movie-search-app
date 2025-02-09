@@ -1,0 +1,71 @@
+/* General Styling for the Movie Detail Page */
+.movie-detail-page {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    min-height: 100vh;
+  }
+  
+  /* Movie Detail Banner (Image) */
+  .movie-detail-banner {
+    flex: 1;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+  }
+  
+  .movie-detail-poster {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .no-poster {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Movie Info Section */
+  .movie-detail-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movie-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .movie-release-year,
+  .movie-genres {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .movie-overview {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .movie-ratings {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  

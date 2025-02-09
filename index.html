@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+
+    <!-- App script - START -->
+    <script type="module" src="/assets/js/app.js"></script>
+    <!-- App script - END -->
+
+    <!-- App styling - START -->
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
+    <link rel="stylesheet" href="/assets/css/block/header.css" />
+    <link rel="stylesheet" href="/assets/css/block/search-form.css" />
+    <link rel="stylesheet" href="/assets/css/block/movie-list.css" />
+    <link rel="stylesheet" href="/assets/css/block/movie-card.css" />
+    <link rel="stylesheet" href="/assets/css/block/movie-details.css" />
+    <!-- App styling - END -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container card">
+        <div class="container__left">
+          <img src="/assets/img/logo.svg" class="header__logo" />
+        </div>
+      </div>
+    </header>
+    <body>
+      <section class="search container">
+        <form search-form></form>
+      </section>
+      <section>
+        <div movie-list></div>
+        <div movie-details></div>
+      </section>
+    </body>
+  </body>
+</html>

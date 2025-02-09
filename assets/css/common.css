@@ -1,0 +1,14 @@
+.container {
+  width: min(100dvw, var(--app-container-max-width));
+  padding: 4px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.card {
+  background-color: var(--app-card-background);
+  color: var(--app-on-card-background);
+}

@@ -1,0 +1,12 @@
+.movielist{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+
+@media only screen and (max-width:768px) {
+
+    .movielist{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

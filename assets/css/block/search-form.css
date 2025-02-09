@@ -1,0 +1,22 @@
+.search {
+  display: flex;
+  & > form {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+
+    & > input {
+      flex-grow: 1;
+      padding: 8px 16px;
+    }
+
+    & > button {
+      padding: 8px 16px;
+      background-color: var(--app-primary-color);
+      color: var(--app-on-primary-color);
+      border: none;
+      transition: 300ms ease;
+      cursor: pointer;
+    }
+  }
+}

@@ -13,11 +13,12 @@ This project runs using the built-in PHP development server.
    ```sh
    cd /movie-search-app
    ```
-3. Start the PHP built-in server:
+3. Configure `api/Config.php` with your API credentials from TMDB API.
+4. Start the PHP built-in server:
    ```sh
    php -S localhost:3000
    ```
-4. Open your browser and visit:
+5. Open your browser and visit:
    ```
    http://localhost:3000
    ```
